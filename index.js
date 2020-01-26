@@ -63,13 +63,15 @@ function placeOrder(cardNumber) {
   
   for(var i = 0; i < cart.length; i++){
     
-    if(cardNumber === true){
+    if(!cardNumber){
       
+       return 'Sorry, we don\'t have a credit card on file for you.'
+       
       cart.pop()
       
       return `Your total cost is $${sum += cart[i].itemPrice}, which will be charged to the card ${cardNumber}.`
     }
   }
-   return 'Sorry, we don\'t have a credit card on file for you.'
+  
 }
 
