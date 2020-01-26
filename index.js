@@ -66,12 +66,10 @@ function placeOrder(cardNumber) {
     if(!cardNumber){
       
        return 'Sorry, we don\'t have a credit card on file for you.'
-       
-      cart.pop()
-      
-      return `Your total cost is $${sum += cart[i].itemPrice}, which will be charged to the card ${cardNumber}.`
     }
   }
-  
+  cart.pop()
+      
+  return `Your total cost is $${sum += cart[i].itemPrice}, which will be charged to the card ${cardNumber}.`
 }
 
