@@ -46,15 +46,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
-  if(cart.length === 0){
-    return 'That item is not in your cart.'
-  }
-  
   for(var i = 0; i < cart.length; i++){
     if(cart.length === i){
       return cart.pop(cart[i])
     }
+    return 'That item is not in your cart.'
   }
   
 }
