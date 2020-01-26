@@ -61,7 +61,16 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   
-  
+  for(var i = 0; i < cart.length; i++){
+    
+    if(cardNumber === true){
+      
+      cart.pop(i)
+      
+      return `Your total cost is $${
+      
+    }
+  }
   
 }
 
