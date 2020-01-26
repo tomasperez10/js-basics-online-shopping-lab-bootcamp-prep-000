@@ -51,6 +51,12 @@ function removeFromCart(item) {
     return 'That item is not in your cart.'
   }
   
+  for(var i = 0; i < cart.length; i++){
+    if(cart.length === i){
+      return cart.pop(cart[i])
+    }
+  }
+  
 }
 
 function placeOrder(cardNumber) {
