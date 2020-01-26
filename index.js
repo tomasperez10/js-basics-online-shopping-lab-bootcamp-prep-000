@@ -51,7 +51,7 @@ function removeFromCart(item) {
     
     if(cart[i].itemName === item){
       
-      cart.splice(cart[i].itemName)
+      cart.splice(i, 1)
       
       return cart
     }
