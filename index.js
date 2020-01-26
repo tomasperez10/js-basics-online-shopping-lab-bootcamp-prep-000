@@ -65,7 +65,7 @@ function placeOrder(cardNumber) {
     
     if(cardNumber === true){
       
-      cart.pop(i)
+      cart.pop()
       
       return `Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`
       
